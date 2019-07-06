@@ -1,0 +1,23 @@
+{
+  "name": "auto-cw",
+  "version": "0.1.0",
+  "description": "A discord bot for automatically moderating content warning lists",
+  "main": "bot/main.js",
+  "scripts": {
+    "start": "node bot/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlatypodeCode/AutoCW.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/PlatypodeCode/AutoCW/issues"
+  },
+  "homepage": "https://github.com/PlatypodeCode/AutoCW#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "mongoose": "^5.6.3"
+  }
+}
