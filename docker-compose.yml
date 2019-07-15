@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  bot:
+    container_name: AutoCW-bot
+    build: .
+    entrypoint:
+      - node
+      - bot/main.js
+    depends_on:
+      - db
+    restart: always
+    volumes:
+      - "./config.json:/app/config.json:ro"
+
+  db:
+    container_name: AutoCW-db
+    image: mongo
+    restart: always
+    volumes:
+      - "data:/data/db"
+
+volumes:
+  data:
+    driver: local
